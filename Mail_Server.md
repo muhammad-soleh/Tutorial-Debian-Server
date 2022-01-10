@@ -1,5 +1,5 @@
 # Settings Mail Server di debian 10
-###1. Untuk membuat mail server dibutuhkan domain dulu
+### 1. Untuk membuat mail server dibutuhkan domain dulu
 > pertama-tama kita install dulu bind9 dnsutils bind9utils
 ```bash
 apt install bind9 dnsutils bind9utils -y
@@ -65,9 +65,9 @@ nameserver 172.16.99.1
 ```
 > Jika sudah maka coba jalankan command nslookup pada domain coba.net dan mail.coba.net jika berhasil maka kita bisa lanjut ke langkah berikutnya
 
-###2. Selanjutnya kita install lamp nya sama seperti di database server jadi bisa dibaca di bagian database_server.md
+### 2. Selanjutnya kita install lamp nya sama seperti di database server jadi bisa dibaca di bagian database_server.md
 
-###3. Menginstall dan konfigurasi postfix(MTA) dan Dovecot (MDA)
+### 3. Menginstall dan konfigurasi postfix(MTA) dan Dovecot (MDA)
 > Install dulu postfix dan dovecotnya
 ```bash
 apt install postfix dovecot-imapd dovecot-pop3d
@@ -124,7 +124,7 @@ lalu ok saja sampai di Local networks: disini kita tambahkan network dari ip nya
 systemctl restart postfix dovecot
 ```
 
-###4. Instalasi dan konfigurasi Roundcube
+### 4. Instalasi dan konfigurasi Roundcube
 > pertama install roundcube
 ```bash
 apt install roundcube
