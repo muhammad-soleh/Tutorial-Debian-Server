@@ -166,6 +166,26 @@ adduser jeany
 ls /home/joni
 ls /home/jeany
 ```
+### 5. Cara mengetest apakah berhasil atau tidak bisa menggunakan telnet
+```bash
+telnet mail.coba.net 25
+mail from: joni
+rcpt to: jeany
+data
+hehe halo jeany
+.
+quit
+```
+```bash
+telnet mail.coba.net 110
+user jeany
+pass 1 #masukkan password usernya
+stat
+retr 1
+# jika disini ada isinya berarti sudah berhasil
+quit
+```
+untuk test menggunakan roundcube dan thunder bird nanti menyusul
 
 
 
