@@ -1,5 +1,5 @@
-Setting wordpress di debian server
-# 1. Pastikan database sudah di setting caranya bisa dilihat di github sebelumnya
+# Setting wordpress di debian server
+### 1. Pastikan database sudah di setting caranya bisa dilihat di github sebelumnya
 ### 2. Pertama-tama kita buat dulu database untuk wordpress
 >login ke database
 ```bash
