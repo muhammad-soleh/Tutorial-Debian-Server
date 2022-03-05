@@ -30,17 +30,17 @@ untuk selanjutnya pilih yes aja
 ```bash 
 mkdir download
 cd download
-wget https://files.phpmyadmin.net/phpMyAdmin/4.9.0.1/phpMyAdmin-4.9.0.1-all-languages.tar.gz
+wget https://files.phpmyadmin.net/phpMyAdmin/5.1.3/phpMyAdmin-5.1.3-all-languages.tar.gz
 ```
 
 ### 4. Selanjutnya kita extract file phpmyadmin nya 
 ```bash
-tar zxvf phpMyAdmin-4.9.0.1-all-languages.tar.gz
+tar xvf phpMyAdmin-5.1.3-all-languages.tar.gz
 ```
 
 ### 5. selanjutnya kita pindahkan folder phpmyadmin nya ke /usr/share/phpMyAdmin
 ```bash
-mv phpMyAdmin-4.9.0.1-all-languages /usr/share/phpMyAdmin
+mv phpMyAdmin-5.1.3-all-languages.tar.gz /usr/share/phpMyAdmin
 ```
 
 ### 6. Langkah selanjutnya kita copy file config.sample.inc.php menjadi config.inc.php
@@ -117,42 +117,11 @@ quit;
 > buka folder /etc/apache2/sites-available/
 ```bash
 cd /etc/apache2/sites-available/
-nano phpmyadmin.conf
+nano 000-default.conf
 ```
->lalu paste saja dibawah ini ke dalam filenya
+>lalu paste saja dibawah ini dibawah DocumentRoot
 ```bash
 Alias /phpmyadmin /usr/share/phpMyAdmin
-        <Directory /usr/share/phpMyAdmin/>
-            AddDefaultCharset UTF-8
-       <IfModule mod_authz_core.c>
-         # Apache 2.4
-         <RequireAny> 
-          Require all granted
-         </RequireAny>
-       </IfModule>
-       <IfModule !mod_authz_core.c>
-         # Apache 2.2
-         Order Deny,Allow
-         Deny from All
-         Allow from 127.0.0.1
-         Allow from ::1
-       </IfModule>
-    </Directory>
-    <Directory /usr/share/phpMyAdmin/setup/>
-       <IfModule mod_authz_core.c>
-         # Apache 2.4
-         <RequireAny>
-           Require all granted
-         </RequireAny>
-       </IfModule>
-       <IfModule !mod_authz_core.c>
-         # Apache 2.2
-         Order Deny,Allow
-         Deny from All
-         Allow from 127.0.0.1
-         Allow from ::1
-       </IfModule>
-    </Directory>
 ```
 lalu di save ctrl x -> y
 ### 11. selanjutnya publikasi ke web server file dan membuat tmp
