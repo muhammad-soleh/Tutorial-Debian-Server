@@ -203,6 +203,7 @@ nano /var/www/html/wordpress/wp-config.php
 > dan save filenya ctrl + x > y
 ### lalu balik ke wordpress dan klik run the installation
 ### nah disini masukkan judul ke site title, masukkan username bebas, dan passwordnya juga bebas(jika password nya weak, ceklis aja confirm use password weak), dan email isi bebas. lalu klik go
+### lalu login aja menggunakan username dan password yang tadi dibuat
 ### selesai
 
 
