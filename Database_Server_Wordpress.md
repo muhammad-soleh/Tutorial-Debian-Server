@@ -193,17 +193,23 @@ systemctl restart apache2
 
 ## Cara setting Wordpress nya 
 ### Setelah kalian buka di browser maka klik lets go aja
+![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/1.png)
 ### lalu masukkan username nya 'tekaje22' dan passwordnya 'tekaje22' lalu klik next aja ( untuk username dan password sesuai yang kita bikin diatas )
+![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/2.png)
 ### lalu copy semua yang di dalam kotak dan buka kembali debiannya
 > buat file wp-config.php didalam folder wordpress
 ```bash
 nano /var/www/html/wordpress/wp-config.php
 ```
 > lalu paste aja semuanya
+![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/4.png)
 > dan save filenya ctrl + x > y
 ### lalu balik ke wordpress dan klik run the installation
+[gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/3.png)
 ### nah disini masukkan judul ke site title, masukkan username bebas, dan passwordnya juga bebas(jika password nya weak, ceklis aja confirm use password weak), dan email isi bebas. lalu klik go
+[gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/5.png)
 ### lalu login aja menggunakan username dan password yang tadi dibuat
+[gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/6.png)
 ### selesai
 
 
