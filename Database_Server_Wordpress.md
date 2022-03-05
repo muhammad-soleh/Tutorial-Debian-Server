@@ -143,4 +143,66 @@ QUIT
 
 ### 13.selanjutnya buka browser dan buka IP/phpmyadmin
 
+# Setting Wordpress 
+### note (membuat database untuk wordpressnya)
+```bash
+mysql -u root -p
+[mysql] > create database wordpress;
+```
+### 1. Kita Download dahulu file wordpress nya dari web nya wordpress
+```bash
+wget http://wordpress.org/latest
+```
+
+### 2. lalu kita extract file nya menggunakan command tar
+```bash
+tar xvf latest
+```
+
+### 3. Setelah itu kita pindahkan saja file wordpress nya ke /var/www/html
+```bash
+mv wordpress /var/www/html
+```
+
+### 4. lalu buka saja di chrome atau web browser lainnya 
+```bash
+http://ip_debian/wordpress
+```
+### jika ingin menambahkan wordpress ini ke dns yang sudah kalian buat maka tambahkan config berikut
+> copy file /etc/apache2/sites-available/000-default.conf  menjadi ke file seterah kalian
+```bash
+cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/wordpress.conf
+```
+> Lalu kita buka file nya 
+```bash 
+nano /etc/apache2/sites-available/wordpress.conf
+```
+> Edit pada ServerName dan DocumentRootnya
+```bash
+ServerName dns_kalian
+DocumentRoot /var/www/html/wordpress
+```
+> lalu kita enable site dulu
+```bash
+a2ensite wordpress.conf
+```
+> restart apache2
+```bash
+systemctl restart apache2
+```
+
+## Cara setting Wordpress nya 
+### Setelah kalian buka di browser maka klik lets go aja
+### lalu masukkan username nya 'tekaje22' dan passwordnya 'tekaje22' lalu klik next aja ( untuk username dan password sesuai yang kita bikin diatas )
+### lalu copy semua yang di dalam kotak dan buka kembali debiannya
+> buat file wp-config.php didalam folder wordpress
+```bash
+nano /var/www/html/wordpress/wp-config.php
+```
+> lalu paste aja semuanya
+> dan save filenya ctrl + x > y
+### lalu balik ke wordpress dan klik run the installation
+### nah disini masukkan judul ke site title, masukkan username bebas, dan passwordnya juga bebas(jika password nya weak, ceklis aja confirm use password weak), dan email isi bebas. lalu klik go
+### selesai
+
 
