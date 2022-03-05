@@ -136,7 +136,7 @@ systemctl restart apache2
 ### 12. Selanjutnya kita akan membuat akses login ke phpmyadmin
 ```bash
 mysql -u root -p 
-CREATE USER 'tekaje22'@' IDENTIFIED BY 'tekaje22';
+CREATE USER 'tekaje22'@'%' IDENTIFIED BY 'tekaje22';
 GRANT ALL PRIVILEGES ON *.* TO 'tekaje22'@'%' WITH GRANT OPTION;
 QUIT
 ```
