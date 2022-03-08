@@ -127,7 +127,7 @@ lalu di save ctrl x -> y
 ### 11. selanjutnya publikasi ke web server file dan membuat tmp
 ```bash
 a2ensite phpmyadmin.conf
-mkdir /ush/share/phpMyAdmin/tmp
+mkdir /usr/share/phpMyAdmin/tmp
 chmod 777 /usr/share/phpMyAdmin/tmp
 chown -R www-data:www-data /usr/share/phpMyAdmin
 systemctl restart apache2
