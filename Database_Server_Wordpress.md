@@ -40,7 +40,7 @@ tar xvf phpMyAdmin-5.1.3-all-languages.tar.gz
 
 ### 5. selanjutnya kita pindahkan folder phpmyadmin nya ke /usr/share/phpMyAdmin
 ```bash
-mv phpMyAdmin-5.1.3-all-languages.tar.gz /usr/share/phpMyAdmin
+mv phpMyAdmin-5.1.3-all-languages/ /usr/share/phpMyAdmin
 ```
 
 ### 6. Langkah selanjutnya kita copy file config.sample.inc.php menjadi config.inc.php
@@ -55,7 +55,7 @@ nano /usr/share/phpMyAdmin/config.inc.php
  * This is needed for cookie based authentication to encrypt password in
  * cookie. Needs to be 32 chars long.
  */
-$cfg['blowfish_secret'] = 'STRINGOFTHIRTYTWORANDOMCHARACTERS'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH!$
+$cfg['blowfish_secret'] = 'STRINGOFTHIRTYTWORANDOMCHARACTER'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH!$
 
 /**
  * Servers configuration
@@ -126,7 +126,6 @@ Alias /phpmyadmin /usr/share/phpMyAdmin
 lalu di save ctrl x -> y
 ### 11. selanjutnya publikasi ke web server file dan membuat tmp
 ```bash
-a2ensite phpmyadmin.conf
 mkdir /usr/share/phpMyAdmin/tmp
 chmod 777 /usr/share/phpMyAdmin/tmp
 chown -R www-data:www-data /usr/share/phpMyAdmin
