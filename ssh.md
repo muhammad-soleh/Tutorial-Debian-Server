@@ -1,4 +1,4 @@
-# Konfigurasi ssh di Linux.
+# Konfigurasi SSH di Linux.
 
 > SSH (secure shell) adalah salah satu protokol yang digunakan untuk remote. Port SSH secara default adalah 22, namun bisa kita ganti untuk keamanan. Di tutorial kali ini saya akan mengkonfigurasi ssh dengan konfigurasi port 51234, dan Root diizinkan untuk remote(ingat konfigurasi ini sangat tidak disarankan namun untuk memudahkan konfigurasi selanjutnya dan saya izinkan root untuk login). Langsung saja ke konfigurasi nya, pastikan os nya sudah mendapatkan internet dan update repository.
 
@@ -7,18 +7,18 @@
 apt install ssh -y
 ```
 
-### 2. selanjutnya buka file konfig sshnya
+### 2. Selanjutnya buka file konfig sshnya
 ```bash
 nano /etc/ssh/sshd_config
 ```
 
-### 3. di sini ada 2 yang diubah bagian port dan permitRootLogin
+### 3. Di sini ada 2 yang diubah bagian port dan permitRootLogin
 ```bash
 port 51234
 permitRootLogin yes
 ```
 
-### 4. setelah itu kita restart service sshnya
+### 4. Setelah itu kita restart service sshnya
 ```bash
 systemctl restart ssh
 ```
