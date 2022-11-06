@@ -28,4 +28,6 @@ systemctl restart ssh
 ![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/ssh_4.png)
 
 ### 5. Setelah itu kita bisa setting di clientnya menggunkan putty dll.
+> disini hostname diisi dengan ip address linux dan port diisi dengan port yang digunakan contoh 51234
+![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/ssh_5.png)
 
