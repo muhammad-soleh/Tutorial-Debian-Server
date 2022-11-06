@@ -25,7 +25,16 @@ deb-src http://security.debian.org/debian-security/ buster/updates main contrib 
 ```
 >setelah itu save dan keluar tekan tombol ctrl +x > y >enter
 
-### 4. setelah itu tinggal apt update
+### 4. Atau jika ingin menggunakan beberapa package saja kita bisa menggunakan yang lokal. Karena jika kita menggunakan yang local akan lebih cepat karena server repo yang berada di satu negara.
+> saya mengambilnya di website https://www.linuxid.net/35415/daftar-repository-lokal-debian-10-buster/
+```bash
+deb http://kartolo.sby.datautama.net.id/debian/ buster main contrib non-free
+deb http://kartolo.sby.datautama.net.id/debian/ buster-updates main contrib non-free
+deb http://kartolo.sby.datautama.net.id/debian-security/ buster/updates main contrib non-free
+```
+
+
+### 5. setelah itu tinggal apt update
 ```bash
 apt update
 ```
