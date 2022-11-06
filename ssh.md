@@ -6,22 +6,26 @@
 ```bash
 apt install ssh -y
 ```
+![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/ssh_1.png)
 
 ### 2. Selanjutnya buka file konfig sshnya
 ```bash
 nano /etc/ssh/sshd_config
 ```
+![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/ssh_2.png)
 
 ### 3. Di sini ada 2 yang diubah bagian port dan permitRootLogin
 ```bash
 port 51234
 permitRootLogin yes
 ```
+![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/ssh_3.png)
 
 ### 4. Setelah itu kita restart service sshnya
 ```bash
 systemctl restart ssh
 ```
+![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/ssh_4.png)
 
 ### 5. Setelah itu kita bisa setting di clientnya menggunkan putty dll.
 
