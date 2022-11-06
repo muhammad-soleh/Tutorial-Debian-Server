@@ -1,4 +1,5 @@
 # Setting repository online di debian server
+> Pasti kalian bertanya-tanya apa sih kegunaan repository dan mengapa kita harus menggunakann repository online. Repository ialah tempat dimana kita akan mengambil tools/aplikasi yang akan kita install ke dalam os linux debian ini. Nah repository ini bisa kita dapatkan menggunakan cd iso debian atau kita juga bisa menggunakan repository online. Perbedaan nya ialah jikalau kita hanya ingin menginstall beberapa tools/aplikasi, maka lebih efisien ika kita menggunakan repository online.
 ### 1. Pastikan kalian sudah terkonek ke internet, testnya coba ping google.com atau ping 8.8.8.8
 ```bash
 ping 8.8.8.8
