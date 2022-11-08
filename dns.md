@@ -18,6 +18,7 @@
 ```bash
 apt install bind9 dnsutils
 ```
+![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/dns_1.png)
 
 ### 2. Membuat forward zone 
 > kita ikuti saja dulu seperti dibawah ini
@@ -25,9 +26,14 @@ apt install bind9 dnsutils
 cp named.conf.default-zones named.conf.local
 nano named.conf.local
 ```
+![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/dns_2.png)
+
 > lalu hapus saja semua nya hingga tersisa seperti dibawah ini
+![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/dns_3.png)
 > lalu kita ganti localhost dengan domain kita misal disini kita akan menggunakan domain lehzo.co.id
+![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/dns_4.png)
 > lalu bagian file nya juga diganti menjadi /etc/bind/db.lehzo (penamaan bebas asal ingat)
+![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/dns_5.png)
 > lalu save saja terlebih dahulu ctrl-x , y
 
 
