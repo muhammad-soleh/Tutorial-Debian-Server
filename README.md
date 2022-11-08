@@ -9,8 +9,8 @@
 ### 3. Setting DNS Server
 [check here](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/dns.md)
 
-### 2. Setting database dan wordpress
+### 4. Setting database dan wordpress
 [check here](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/Database_Server_Wordpress.md)
 
-### 3. Setting Mail Server 
+### 5. Setting Mail Server 
 [check here](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/Mail_Server.md)
