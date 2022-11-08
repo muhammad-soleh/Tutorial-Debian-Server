@@ -29,10 +29,16 @@ nano named.conf.local
 ![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/dns_2.png)
 
 > lalu hapus saja semua nya hingga tersisa seperti dibawah ini
+```
+```
 ![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/dns_3.png)
 > lalu kita ganti localhost dengan domain kita misal disini kita akan menggunakan domain lehzo.co.id
+```
+```
 ![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/dns_4.png)
 > lalu bagian file nya juga diganti menjadi /etc/bind/db.lehzo (penamaan bebas asal ingat)
+```
+```
 ![gambar](https://github.com/muhammad-soleh/Tutorial-Debian-Server/blob/main/images/dns_5.png)
 > lalu save saja terlebih dahulu ctrl-x , y
 
