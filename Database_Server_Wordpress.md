@@ -212,3 +212,16 @@ nano /var/www/html/wordpress/wp-config.php
 ### selesai
 
 
+### JIka ingin menggunakan plugin pastikan kita jalankan command berikut
+```bash
+find /var/www/html -type d -exec chmod 755 {} \;
+find /var/www/html -type f -exec chmod 644 {} \;
+```
+
+### Jika ingin mengupload plugin/theme yang lebih dari 2Mb maka kita harus ubah di bagian php.ini
+```bash
+nano /etc/php/versi_php/apache2/php.ini
+``
+> kita search menggunakan ctrl+w upload_file lalu kita ubah 2M menjadi 10M atau lebih
+> lalu setelah itu kita save dengan ctrl+x , y enter
+
